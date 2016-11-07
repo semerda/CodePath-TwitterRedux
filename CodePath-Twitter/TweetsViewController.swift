@@ -59,6 +59,10 @@ class TweetsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             self.composeBarButton.customView!.transform = CGAffineTransform.identity
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //self.navigationController?.navigationBar.backgroundColor = UIColor(netHex:0x63a9e8)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

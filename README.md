@@ -32,7 +32,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/semerda/CodePath-Twitter/blob/master/twitterredux-anim.gif' title='Twitter Redux Video Walkthrough' width='' alt='Twitter Redux Video Walkthrough' loop=infinite />
+<img src='https://github.com/semerda/CodePath-TwitterRedux/blob/master/twitterredux-anim.gif' title='Twitter Redux Video Walkthrough' width='' alt='Twitter Redux Video Walkthrough' loop=infinite />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

@@ -56,8 +56,6 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate, UITableView
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        //self.navigationController?.navigationBar.isTranslucent = true
-        //self.navigationController?.view.backgroundColor = UIColor.clear
         
         // Update UI
         user = user == nil ? User.currentUser : user // if nothing passed in then it must be operators profile
@@ -118,13 +116,11 @@ class ProfileViewController: UIViewController, UIScrollViewDelegate, UITableView
     override func viewDidAppear(_ animated: Bool) {
         // Header - Image
         headerImageView = UIImageView(frame: header.bounds)
-        //headerImageView?.image = UIImage(named: "kraken-pb-eyes-colored") // TODO: Load from Real Twitter Account?
         headerImageView?.contentMode = UIViewContentMode.scaleAspectFill
         header.insertSubview(headerImageView, belowSubview: headerLabel)
         
         // Header - Blurred Image
         headerBlurImageView = UIImageView(frame: header.bounds)
-        //headerBlurImageView?.image = UIImage(named: "kraken-pb-eyes-colored")?.blurredImage(withRadius: 10, iterations: 20, tintColor: UIColor.clear)
         headerBlurImageView?.contentMode = UIViewContentMode.scaleAspectFill
         headerBlurImageView?.alpha = 0.0
         header.insertSubview(headerBlurImageView, belowSubview: headerLabel)
